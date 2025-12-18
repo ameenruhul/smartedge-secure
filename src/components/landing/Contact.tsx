@@ -60,19 +60,16 @@ const Contact = () => {
             </p>
 
             {/* Quick Stats */}
-            <div className="flex items-center gap-4 mb-8">
-              <div className="flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-2">
-                <Clock className="w-5 h-5 text-brand-cyan" />
+            <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-8">
+              <div className="flex items-center gap-2 bg-primary-foreground/10 rounded-full px-3 sm:px-4 py-2 text-sm sm:text-base">
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-brand-cyan" />
                 <span className="text-primary-foreground font-medium">Quick Response</span>
               </div>
-              <div className="flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-2">
-                <MapPin className="w-5 h-5 text-brand-cyan" />
-                {serviceAreas.map((area, i) => (
-                  <span key={area} className="text-primary-foreground font-medium">
-                    {area}
-                    {i < serviceAreas.length - 1 ? " •" : ""}
-                  </span>
-                ))}
+              <div className="flex items-center gap-1 sm:gap-2 bg-primary-foreground/10 rounded-full px-3 sm:px-4 py-2 text-sm sm:text-base">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-brand-cyan flex-shrink-0" />
+                <span className="text-primary-foreground font-medium">
+                  {serviceAreas.join(" • ")}
+                </span>
               </div>
             </div>
 
