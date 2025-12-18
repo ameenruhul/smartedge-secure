@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-security.jpg";
 
 const Hero = () => {
   const features = [
-    "6K Cameras",
+    "4K Cameras",
     "Fully Wired (PoE) Systems",
     "Licensed Professionals",
   ];

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Package = () => {
   const packageFeatures = [
-    { icon: Camera, text: "4x 6K Cameras + NVR" },
+    { icon: Camera, text: "4x 4K Cameras + NVR" },
     { icon: HardDrive, text: "2TB Hard Drive" },
     { icon: Wifi, text: "Fully wired PoE setup" },
     { icon: Wrench, text: "Clean, professional installation" },
@@ -54,7 +54,7 @@ const Package = () => {
             <span className="text-brand-cyan">Surveillance Package</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            We install premium 6K security cameras with hard-wired reliability—no signal
+            We install premium 4K security cameras with hard-wired reliability—no signal
             dropouts, no shortcuts.
           </p>
         </motion.div>
