@@ -7,12 +7,12 @@ const Contact = () => {
   const serviceAreas = ["Canberra", "NSW", "Greater Sydney"];
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-hero-gradient relative overflow-hidden">
+    <section id="contact" className="py-12 sm:py-16 lg:py-28 bg-hero-gradient relative overflow-hidden">
       {/* Pattern Overlay */}
       <div className="absolute inset-0 pattern-overlay opacity-20" />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - CTA */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -20,14 +20,14 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block bg-primary-foreground/20 text-primary-foreground font-semibold px-4 py-2 rounded-full text-sm mb-4">
+            <span className="inline-block bg-primary-foreground/20 text-primary-foreground font-semibold px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm mb-3 sm:mb-4">
               Get Started Today
             </span>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight">
               Get a Free Quote in{" "}
               <span className="text-brand-cyan">30 Minutes</span>
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8">
+            <p className="text-base sm:text-lg text-primary-foreground/80 mb-6 sm:mb-8">
               No pressure. No obligation. Just honest advice. Have questions about
               creating the perfect Security Camera & Smart Automation system? We're
               here to guide you every step of the way.
